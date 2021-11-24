@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="style.css">
+   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css%22%3E">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-  <section class="section">
+  <body class="block">
+  <section class="section is-">
     <div class="container">
       <h1 class="title">
         Hello World
@@ -20,8 +21,69 @@
       </p>
     </div>
   </section>
-
-  <div class="card">
+  <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          Documentation
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+  // olika utseenden på knappar som ligger i en div med klassen "card"
+  <div class="card"> 
     <h2 class="is-underlined">Buttons</h2>
     <button class="button">
       Button
@@ -47,14 +109,18 @@
     <button class="button is-info is-loading">
       Button
     </button>
+    <br>
   </div>
+// olika utseenden på knappar som ligger i en div med klassen "card"
 
+<br>
 <br>  
+
+//olika ikoner som ligger i en div med klassen  "notification is-danger" som ger den röda bakgrunden.
 
 <h2 class="is-underlined">Ikoner</h2>
 <div class="notification is-danger">
   <button class="delete"></button>
-  <h2>Ikoner</h2>
   <span class="icon-text">
     <span class="icon">
       <i class="fa fa-train"></i>
@@ -79,7 +145,9 @@
 </div>
 
 <br>
+<br>
 
+//En färdig typ av meny
 <h2 class="is-underlined">Panel</h2>
 <article class="panel is-primary">
   <p class="panel-heading">
@@ -126,8 +194,10 @@
   </a>
 </article>
 
+
 <br>
 
+//En layout med olika "tiles". 
 <h2 class="is-underlined">Tiles</h2>
 <div class="tile is-ancestor">
   <div class="tile is-vertical is-8">
@@ -147,7 +217,7 @@
           <p class="title">Middle tile</p>
           <p class="subtitle">With an image</p>
           <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/640x480.png">
+            <img src="https://bulma.io/images/placeholders/640x480.png" class="is-rounded">
           </figure>
         </article>
       </div>
@@ -175,8 +245,10 @@
   </div>
 </div>
 
+
 <br>
 
+//En till fädig meny
 <h2 class="is-underlined">menu</h2>
 <aside class="menu">
   <p class="menu-label">
@@ -213,8 +285,142 @@
   </ul>
 </aside>
 
+
 <br>
 
+<b>//Färdig drop-down meny.</b>
+<div class="control has-icons-left">
+  <div class="select is-large">
+    <select>
+      <option selected>Country</option>
+      <option>Select dropdown</option>
+      <option>With options</option>
+    </select>
+  </div>
+  <span class="icon is-large is-left">
+    <i class="fa fa-globe"></i>
+  </span>
+</div>
+
+<br>
+
+//Kommentarsfält
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="field">
+      <p class="control">
+        <textarea class="textarea" placeholder="Add a comment..."></textarea>
+      </p>
+    </div>
+    <nav class="level">
+      <div class="level-left">
+        <div class="level-item">
+          <a class="button is-info">Submit</a>
+        </div>
+      </div>
+      <div class="level-right">
+        <div class="level-item">
+          <label class="checkbox">
+            <input type="checkbox"> Press enter to submit
+          </label>
+        </div>
+      </div>
+    </nav>
+  </div>
+</article>
+
+
+<br>
+
+<b>//Adderar klassen block för färdigt mellanrum mellan raderna.</b>
+<br>
+<div class="block">
+  This text is within a <strong>block</strong>.
+</div>
+<div class="block">
+  This text is within a <strong>second block</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+</div>
+<div class="block">
+  This text is within a <strong>third block</strong>. This block has no margin at the bottom.
+</div>
+
+<div>
+  This text is <em>not</em> within a <strong>block</strong>.
+</div>
+<div>
+  This text <em>isn't</em> within a <strong>block</strong> either. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+</div>
+<div>
+  This text is also <em>not</em> within a <strong>block</strong>.
+</div>
+
+<br>
+<b>//progressionsbox</b>
+<div  id="hej">
+  <div class="box is-inline-block">
+    <div class="media">
+        <div class="media-left">
+          <i class="fa fa-globe"></i>
+        </div>
+        
+        
+    </div>
+    <h4 class="title">Projects</h4>
+    <progress   class="progress is-danger" role="progressbar"  max="100">
+    </progress>
+  </div>
+  <div class="box box is-inline-block">
+    <div class="media">
+        <div class="media-left">
+          <i class="fa fa-globe"></i>
+        </div>
+        
+        
+    </div>
+    <h4 class="title">Projects</h4>
+    <progress class="progress is-success" role="progressbar" max="100">
+    </progress>
+  </div>
+  <div class="box box is-inline-block">
+    <div class="media">
+        <div class="media-left">
+          <i class="fa fa-globe"></i>
+        </div>
+        
+      
+    </div>
+    <h4 class="title">Projects</h4>
+    <progress class="progress is-warning" role="progressbar"  max="100">
+    </progress>
+  </div>
+</div>
+
+<br>
+
+
+
+<br>
+
+<nav class="pagination is-centered " role="navigation" aria-label="pagination">
+  <a class="pagination-previous">Previous</a>
+  <a class="pagination-next">Next page</a>
+  <ul class="pagination-list">
+    <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+    <li><span class="pagination-ellipsis">&hellip;</span></li>
+    <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+    <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+    <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+    <li><span class="pagination-ellipsis">&hellip;</span></li>
+    <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+  </ul>
+</nav>
+
+<b>//färdig footer.</b>
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
@@ -224,5 +430,7 @@
     </p>
   </div>
 </footer>
+
+
   </body>
 </html>
